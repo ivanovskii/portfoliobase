@@ -1,0 +1,85 @@
+#headerwrap {
+    background-color: #f3f3f3;
+    overflow: hidden
+}
+
+.opaque {
+    background-color: transparent!important
+}
+
+.backstretch:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0
+}
+
+.backstretch-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #79316e;
+    background: -moz-linear-gradient(top, #79316e 0%, #1f2653 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #79316e), color-stop(100%, #1f2653));
+    background: -webkit-linear-gradient(top, #79316e 0%, #1f2653 100%);
+    background: -o-linear-gradient(top, #79316e 0%, #1f2653 100%);
+    background: -ms-linear-gradient(top, #79316e 0%, #1f2653 100%);
+    background: linear-gradient(to bottom, #79316e 0%, #1f2653 100%);
+    opacity: 0.5;
+}
+
+.backstretch-overlay-alt .backstretch-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #3A539B;
+    opacity: 0.5;
+}
+
+.no-overlay .backstretch-overlay {
+    display: none;
+    opacity: 0;
+}
+
+#tubular-container {
+    z-index: -1!important;
+    position: absolute!important
+}
+
+header {
+    color: #333
+}
+
+header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color: #333
+}
+
+#headerwrap img {
+    margin: 0 auto;
+    display: block;
+}
+
+header .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-size: 22px;
+    text-transform: none;
+    line-height: 22px
+}
+
+header .intro-text .intro-heading {
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px
+}
+
