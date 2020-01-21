@@ -1,16 +1,15 @@
 {% load bootstrap4 %}
-{% bootstrap_css %}
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
+	{% bootstrap_css %}
 	<meta charset="utf-8">
 	<title>Регистрация</title>
     <link rel="stylesheet" href= "{% static "css/bootstrap.min.css" %}">
 	<link rel="stylesheet" href="{% static "css/bootstrap-theme.css" %}" media="screen" >
 	<link rel="stylesheet" href= "{% static "css/main.css" %}">
 </head>
-
 <body>
 	<div class="container">
 		<ol class="breadcrumb">
@@ -24,24 +23,22 @@
 					<div class="panel panel-default">
 						<div class="panel-body">
 							<h3 class="thin text-center">Регистрация</h3>
-							<p class="text-center text-muted">Войти в <a href={% url "login" %}>аккаунт.</a>  </p>
+							<p class="text-center text-muted">Войти в <a href={% url "login" %}>аккаунт.</a></p>
 							<hr>
-
-						<form action="{% url "register" %}?next={{ current_url }}" method="POST">
-                            {% csrf_token %}
-                            {% bootstrap_form user_form %}
-                            <div class="row">
+							<form action="{% url "register" %}?next={{ current_url }}" method="POST">
+								{% csrf_token %}
+								{% bootstrap_form user_form %}
+								<div class="row">
 									<div class="col-lg-12 text-right">
 										<button class="btn btn-action" type="submit">Зарегистрироваться</button>
 									</div>
 								</div>
-                        </form>
+							</form>
 						</div>
 					</div>
 				</div>
 			</article>
 		</div>
 	</div>
-
 </body>
 </html>

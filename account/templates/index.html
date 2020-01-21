@@ -1,58 +1,60 @@
 {% load bootstrap4 %}
-{% bootstrap_css %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% bootstrap_css %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfoliobase</title>
     <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet" >
     <link href="{% static "css/style.css" %}" rel="stylesheet">
     <link href="{% static "css/font-awesome.min.css" %}" rel="stylesheet" type="text/css">
-    <script
-		src="https://code.jquery.com/jquery-3.4.1.js"
-		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-		crossorigin="anonymous">
-    </script>
 </head>
 
 <body id="page-top" class="index">
-        <nav class="navbar navbar-default navbar-fixed-top fadeInDown" data-wow-delay="0.5s">
-            <div class="top-bar smoothie hidden-xs">
-                <div class="container">
-                    <div class="clearfix">
-                        <div class="container">
-                             <!-- Здесь должно быть лого -->
-                                <img src="" alt="logo">
+    <nav class="navbar navbar-default navbar-fixed-top fadeInDown" data-wow-delay="0.5s">
+        <div class="top-bar smoothie hidden-xs">
+            <div class="container">
+                <div class="clearfix">
+                    <div class="container">
+                        <!-- Здесь должно быть лого -->
+                        <img src="" alt="logo">
                         <div class="pull-right text-right">
                             <ul class="list-inline">
                                 <li>
-                                  <a href= "{% url "login" %}">Войти</a>
+                                    <a href= "{% url "login" %}">Войти</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
-        </nav>
+        </div>
+    </nav>
 
-        <header id="headerwrap" class="backstretched fullheight">
-            <div class="container vertical-center">
-                <div class="intro-text vertical-center text-left smoothie">
-                    <div class="intro-heading wow fadeIn heading-font" data-wow-delay="0.2s">Какие-то слова</div>
-                    <div class="intro-sub-heading wow fadeIn secondary-font" data-wow-delay="0.4s"> И здесь <span class="rotate">тоже, какие-то, слова</span></div>
+    <header id="headerwrap" class="backstretched fullheight">
+        <div class="container vertical-center">
+            <div class="intro-text vertical-center text-left smoothie">
+                <div class="intro-heading wow fadeIn heading-font" data-wow-delay="0.2s">
+                    Какие-то слова
+                </div>
+                <div class="intro-sub-heading wow fadeIn secondary-font" data-wow-delay="0.4s">
+                    И здесь 
+                    <span class="rotate">
+                        тоже, какие-то, слова
+                    </span>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
 
     <script type="text/javascript" src="{% static "js/jquery.js" %}"></script>
     <script type="text/javascript" src="{% static "js/bootstrap.min.js" %}"></script>
     <script type="text/javascript" src="{% static  "js/plugins.js" %}"></script>
     <script type="text/javascript" src="{% static "js/init.js" %}"></script>
 
-      <script type="text/javascript">
+    <script type="text/javascript">
     $(document).ready(function() {
         jQuery('#headerwrap').backstretch([
             src="{% static "img/business1.jpg" %}",
