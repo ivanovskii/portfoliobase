@@ -7,8 +7,6 @@ from .forms import LoginForm, UserRegistrationForm, \
     UserEditForm, ProfileEditForm
 from .models import Profile
 
-def index(request):
-    return render(request, 'index.html')
 
 def user_login(request):
     if request.method == 'POST':
